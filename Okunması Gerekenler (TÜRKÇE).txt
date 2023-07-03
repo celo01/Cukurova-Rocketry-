@@ -1,0 +1,29 @@
+Merhaba, bu projede orta irtifada uçan bir roketin (yerden yükseklik 3km=9842.52 ft) aviyonik gereksinimlerini karşılamak için olması gereken bilgisayarları sizinle paylaştım 
+Kullandığım modüller roket modelcilikte popüler temin edip başlayabilirsiniz!!! :)
+
+Sizinle bilgisayarlar hakkında ufak bir kaç şey paylaşmak istedim:
+
+ROKET BİLGİSAYARI için
+Bu bilgisayarda sıcaklık, basınç ve irtifa için BMP280 sensörü, ivme ve jiroskop sensörü olarak MPU6050, gps verileri için GPS-NEO7M,yer ile iletişim verileri içinde LORA E32 433T30D kullanılmıştır
+Bu bilgisayarın amacı roketin bulunduğu konum itibariyle kesintisiz  sıcaklık, basınç, irtifa, eksen, gps verisini vermektir.
+
+YER BİLGİSAYARI için
+Bu bilgisayarda roket bilgisayarı ve görev bilgisayarından gelen verileri okuyabilmek için sadece LORA E32 433T30 kullanılmıştır.
+Bu bilgisayarın amacı havadaki rokette bulunan görev ve roket bilgisayarından gelen verileri kişilere iletmektir.
+
+GÖREV BİLGİSAYARI için
+Bu bilgisayarda sıcaklık, basınç ve irtifa için BMP280 sensörü, hava kalite kontrolü için CJMCU-811 sensörü (görevimiz hava kalitesini ölçmek), gps verileri için GPS-NEO7M, yer ile iletişim verileri için LORA E32 433T30D kullanılmıştır.
+Bu bilgisayarın amacı hava kalitesini ölçmek ve yer bilgisayarına iletmektir.
+
+ATEŞLEME BİLGİSAYARI için
+Bu bilgisayarda sıcaklık, basınç ve irtifa için BMP280 sensörü, ivme ve jiroskop sensörü olarak MPU6050 kullanılmıştır.
+Bu bilgisayarın amacı maksimum yükseklikten düşüşe geçtiğinde, paraşütlerin açılması için bilgi göndermektir.
+
+BMP280, MPU6050 ve CJMCU-811 sensörleri için I2C protokolü
+GPS-NEO 7M ve LORA E32 433T30D için ise UART protokolü kullanılmıştır.
+
+Proje Teensy 3.2 ve Arduino nano(Ateşleme kartı için) ile yapılmıştır
+
+Bu proje 1.5 Adana Takımı bünyesinde bulunan Çukurova Rocketry takımına aittir.
+
+Kodlarda anlayamadığınız yer olursa bana dönüş sağlayabilirsiniz. En kısa zamanda yanıtlamaya çalışırım...
