@@ -1,0 +1,29 @@
+Hello, in this project I have shared with you the computers that need to be to meet the avionics requirements of a rocket flying at medium altitude (ground clearance 3km=9842.52 ft)
+The modules I use are popular in rocket modeling Jul and you can get started!!! :)
+
+I wanted to share a few little things with you about computers:
+
+For the ROCKET COMPUTER
+BMP280 sensor for temperature, pressure and altitude, MPU6050 as acceleration and gyroscope sensor, GPS-NEO7M for gps data, LORA E32 433T30D for ground communication data were used in this computer
+The purpose of this computer is to provide continuous temperature, pressure, altitude, October, GPS data as of the rocket's location.
+
+For the GROUND COMPUTER
+Only LORA E32 433T30 was used in this computer to be able to read the data from the rocket computer and the mission computer.
+The purpose of this computer is to transmit data from the mission and rocket computer on the airborne rocket to people.
+
+For the MISSIONCOMPUTER
+BMP280 sensor for temperature, pressure and altitude, CJMCU-811 sensor for air quality control (our mission is to measure air quality), GPS-NEO7M for gps data, LORA E32 433T30D for ground communication data were used in this computer.
+The purpose of this computer is to measure the air quality and transmit it to the ground computer.
+
+For the IGNITION COMPUTER
+BMP280 sensor for temperature, pressure and altitude, MPU6050 is used as acceleration and gyroscope sensor in this computer.
+The purpose of this computer is to send information for the parachutes to open when they fall from the maximum height.
+
+I2C protocol for BMP280, MPU6050 and CJMCU-811 sensors
+For the GPS-NEO 7M and LORA E32 433T30D, the UART protocol was used.
+
+The project was made with Teensy 3.2 and Arduino nano(for the Ignition board)
+
+This project belongs to the Çukurova Rocketry team, which is part of the 1.5 Adana Team.
+
+If there is a place in the codes that you do not understand, you can get back to me. I'll try to answer it as soon as possible...
